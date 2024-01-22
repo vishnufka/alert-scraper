@@ -17,7 +17,9 @@ Original readme:
 python3 alertscraper.py --username='<site username>' --password='<site password>' --secret='<site TOTP secret>'
 
 python3 alertscraper.py --username='you+site@cybersecuritysaasplatform.com' --password='password1' --secret='123456'
+
 python3 alertscraper.py --username='you+site@cybersecuritysaasplatform.com' --password='password1' --secret='LQPSMZYEOAMDSAO'
+
 python3 alertscraper.py --username='you+site@cybersecuritysaasplatform.com' --password='password1'
 
 Do not click around inside the Chrome window or use other programs or tabs, or the data may become corrupted
@@ -72,13 +74,17 @@ Error mentioning LEGACY when you are not on a legacy site. Try use https://app.c
 Encapsulate all arguments with single quotes '' e.g. 'firstname.lastname@cybersecuritysaasplatform.com'
 
 --username / STRING / site username (required)
+
 --password / STRING / site password (required)
 
 ## Optional Arguments
 
 --secret / STRING / site 6-digit 30-second secret from 2FA OR alphanumeric secret key (only appears when you create the 2FA the first time and see the QR code)
     not required for clients without 2FA
+
 --link / STRING / link to Edit Alerting Rules Page as full url: https://...
     no longer used, it is hard coded, leaving in for legacy purposes to avoid breaking everyone's workflows
+
 --outfile / FILEPATH / Location of txt output
+
 --multiorg / if the client is legacy multiorg, add this arg to collect the organisation each alert is assigned to
